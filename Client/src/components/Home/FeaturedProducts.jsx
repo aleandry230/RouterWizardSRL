@@ -1,0 +1,101 @@
+import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import ProductCard from "./ProductCard";
+import { Button } from "@nextui-org/react";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import axios from "axios";
+import { API_URL } from "../../API/API";
+
+export default function FeaturedProducts() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    axios.get(API_URL + "Products/GetAllInEvidence").then((res) => {
+      setProducts(res.data);
+    });
+  }, []);
+  const [swiperPosition, setSwiperPosition] = useState("start");
+
+  const handleSlideChange = (swiper) => {
+    if (swiper.activeIndex === 0) {
+      setSwiperPosition("start");
+    } else if (swiper.isEnd === true) {
+      setSwiperPosition("end");
+    } else {
+      setSwiperPosition(swiper.activeIndex);
+    }
+  };
+
+  return (
+    <div className="flex flex-row gap-5 justify-center items-center">
+      <div>
+        {products.length > 4 && (
+          <Button
+            isIconOnly
+            radius="lg"
+            color="primary"
+            size="sm"
+            className={`arrow-left arrow hidden md:flex ${
+              swiperPosition === 0 ? "disabled" : ""
+            }`}
+            onClick={() => setSwiperPosition(swiperPosition - 1)}
+            isDisabled={swiperPosition === "start"}
+          >
+            <ArrowBackIosNewIcon sx={{ fontSize: 20 }} />
+          </Button>
+        )}
+      </div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }}
+        navigation={{
+          nextEl: ".arrow-right",
+          prevEl: ".arrow-left",
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination, Autoplay, Navigation]}
+        className="h-auto w-full px-10"
+        onSlideChange={(swiper) => handleSlideChange(swiper)}
+      >
+        {products.map((product) => (
+          <SwiperSlide className="w-auto flex justify-center" key={product.id}>
+            <ProductCard data={product} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div>
+        {products.length > 4 && (
+          <Button
+            isIconOnly
+            radius="lg"
+            color="primary"
+            size="sm"
+            className={`arrow-right arrow hidden md:flex ${
+              swiperPosition === 4 ? "disabled" : ""
+            }`}
+            onClick={() => setSwiperPosition(swiperPosition + 1)}
+            isDisabled={swiperPosition === "end"}
+          >
+            <ArrowForwardIosIcon sx={{ fontSize: 20 }} />
+          </Button>
+        )}
+      </div>
+    </div>
+  );
+}

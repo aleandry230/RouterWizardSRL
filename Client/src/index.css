@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf") format("truetype");
+  /* Aggiungi altri formati se necessario */
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+.rotated-35 {
+  transform: rotate(35deg);
+}
+
+.blurred {
+  backdrop-filter: blur(3px);
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: 10px;
+  scrollbar-color: #333333;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 2px;
+}
