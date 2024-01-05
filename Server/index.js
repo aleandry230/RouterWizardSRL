@@ -55,15 +55,6 @@ app.use("/Products", productRoutes);
 const ecommerceRoutes = createEcommerceRoutes(db);
 app.use("/Ecommerce", ecommerceRoutes);
 
-// Configura l'opzione per HTTPS
-const options = {
-  key: fs.readFileSync("SSL/privatekey.key"),
-  cert: fs.readFileSync("SSL/certificato.pem"),
-};
-
-// Crea un server HTTPS
-const server = https.createServer(options, app);
-
 // Avvia il server su HTTPS
 server.listen(PORT, () => {
   console.log(
