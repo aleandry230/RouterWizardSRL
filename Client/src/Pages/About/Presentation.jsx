@@ -8,21 +8,18 @@ export default function Presentation() {
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div>
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
-            La nostra storia
+            Descrizione di Router Wizards
           </h2>
           <p className="mb-4">
-            Siamo l'Azienda Agricola Bianco, un'impresa familiare radicata nelle
-            colline rigogliose della Valle del Belice, nel cuore della Sicilia.
-            La nostra passione per la terra e la produzione di olio extravergine
-            di oliva di alta qualità è il motore che guida ogni passo della
-            nostra attività.
-          </p>
-          <p>
-            Fondata con l'amore per la tradizione agricola, l'Azienda Agricola
-            Bianco nasce dall'unione di generazioni dedite alla coltivazione
-            delle ulive. La nostra storia è intrecciata con il territorio, e ci
-            impegniamo a preservare e trasmettere le antiche tecniche agricole
-            che rendono unico l'olio del Belice.
+            Router Wizards è il principale portale dedicato alle reti e alle
+            comunicazioni, offrendo un'ampia gamma di prodotti attraverso un
+            innovativo e-commerce. Il catalogo include router, switch, modem,
+            accessori di rete, cavi e altro ancora. L'obiettivo è rivoluzionare
+            l'esperienza di acquisto, trasformandola in un viaggio informativo.
+            La piattaforma è progettata per soddisfare le esigenze di acquirenti
+            di ogni livello di competenza, fornendo non solo prodotti di alta
+            qualità, ma anche informazioni approfondite per prendere decisioni
+            consapevoli.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">

@@ -12,13 +12,14 @@ export default function About() {
         </div>
         <div className="aspect-video w-full md:w-1/2 bg-[#2D3A3A] flex flex-col gap-5 justify-center items-center md:items-start py-10 px-10 lg:py-32 lg:px-24">
           <h1 className="text-primary text-2xl lg:text-4xl font-bold text-center md:text-left">
-            Una gemma siciliana
+            Prodotti offerti da Router Wizards
           </h1>
           <p className="text-white text-base lg:text-lg w-full text-center md:text-left">
-            Le nostre olive Nocellara del Belice, un tesoro unico della Valle
-            del Belice, sono coltivate con passione sotto il caldo sole
-            mediterraneo, regalando un mondo di sapori intensi e fragranze
-            avvolgenti che si trovano solo in questa straordinaria regione.
+            Router Wizards offre una vasta gamma di prodotti per reti e
+            comunicazioni, inclusi router avanzati, switch, modem, accessori di
+            rete e cavi di alta qualità. Sia che tu sia principiante o esperto,
+            forniamo soluzioni di connettività su misura con informazioni
+            dettagliate.
           </p>
           <Button
             as={Link}
@@ -35,13 +36,14 @@ export default function About() {
       <div className="w-full flex flex-col-reverse md:flex-row">
         <div className="aspect-video w-full md:w-1/2 bg-[#2D3A3A] flex flex-col gap-5 justify-center items-center md:items-start py-10 px-10 lg:py-32 lg:px-24">
           <h1 className="text-primary text-2xl lg:text-4xl font-bold text-center md:text-left">
-            Il cuore della Sicilia nei nostri campi
+            Focus sulla sicurezza e innovazione
           </h1>
           <p className="text-white text-base lg:text-lg w-full text-center md:text-left">
-            Nei campi della nostra azienda, la passione per la terra e il
-            rispetto per l'ambiente si fondono in un connubio armonioso. Ogni
-            oliva è un piccolo scrigno di sapori, portando con sé l'essenza di
-            un territorio ricco di storia e tradizione.
+            Ci differenziamo per l'attenzione alla sicurezza e all'innovazione,
+            offrendo dispositivi conformi alle normative di sicurezza e
+            abbracciando le ultime tendenze tecnologiche. Con Router Wizards,
+            garantiamo connettività affidabile, sicurezza e tecnologia
+            all'avanguardia.
           </p>
         </div>
         <div className=" aspect-square md:aspect-video md:w-1/2">

@@ -20,15 +20,17 @@ export default function Olio() {
         </div>
         <div>
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
-            Impegno per la qualità
+            Trasparenza e impegno di Router Wizards
           </h2>
           <p className="mb-4">
-            La nostra missione è offrire ai nostri clienti un olio extravergine
-            di oliva che incarni l'eccellenza del Belice. La qualità è al centro
-            di ogni fase della produzione, dalla coltivazione
-            all'imbottigliamento. Ogni goccia di olio che portiamo sul mercato è
-            il risultato del nostro impegno per offrire un prodotto autentico e
-            genuino.
+            La trasparenza è al centro della missione di Router Wizards. Ogni
+            prodotto è accompagnato da recensioni dettagliate fornite dagli
+            utenti, garantendo che ogni acquisto risponda alle aspettative. La
+            piattaforma si impegna a tenere gli acquirenti informati sulle
+            ultime tendenze e innovazioni, fornendo guide dettagliate,
+            spiegazioni chiare e raccomandazioni esperte. L'obiettivo finale è
+            offrire un'esperienza di acquisto per prodotti di reti e
+            comunicazioni che sia semplice, istruttiva e soddisfacente.
           </p>
         </div>
       </div>
