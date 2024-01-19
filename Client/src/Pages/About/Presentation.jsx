@@ -25,12 +25,12 @@ export default function Presentation() {
         <div className="grid grid-cols-2 gap-4 mt-8">
           <img
             className="w-full rounded-lg"
-            src={image1}
+            src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/126864590/original/0ccae38dfd5636d13f69737229ee9e972a2e4942/configure-and-troubleshoot-your-cisco-routers-and-switches.png"
             alt="office content 1"
           />
           <img
             className="mt-4 w-full lg:mt-10 rounded-lg"
-            src={image2}
+            src="https://assets.techrepublic.com/uploads/2022/09/configure-dhcp-server-rocky-linux.jpeg"
             alt="office content 2"
           />
         </div>

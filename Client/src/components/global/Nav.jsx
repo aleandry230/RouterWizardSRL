@@ -70,7 +70,7 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarBrand justify="start">
-        <p className="font-extrabold text-inherit">Azienda agricola Bianco</p>
+        <p className="font-extrabold text-inherit">Router Wizards Srl</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex" justify="center">
         <NavbarItem>

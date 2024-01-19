@@ -36,11 +36,11 @@ export default {
           colors: {
             background: "#F2F2F2",
             primary: {
-              DEFAULT: "#2BA84A",
+              DEFAULT: "#9F2B68",
               foreground: "#ffffff",
             },
             secondary: {
-              DEFAULT: "#248232",
+              DEFAULT: "#800020",
               foreground: "#ffffff",
             },
           },

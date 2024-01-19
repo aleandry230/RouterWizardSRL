@@ -9,12 +9,12 @@ export default function Olio() {
         <div className="grid grid-cols-2 gap-4 mt-8">
           <img
             className="w-full rounded-lg"
-            src={image1}
+            src="https://www.pipeline.it/prodotti-e-servizi/wp-content/uploads/sites/4/2022/05/server-aziendale.jpg"
             alt="office content 1"
           />
           <img
             className="mt-4 w-full lg:mt-10 rounded-lg"
-            src={image2}
+            src="https://i0.wp.com/www.linkiesta.it/wp-content/uploads/2020/02/13b3e2c6-d70f-4211-b395-fcfbb02f075e_large.jpg?fit=1200%2C800&ssl=1"
             alt="office content 2"
           />
         </div>

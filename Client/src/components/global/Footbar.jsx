@@ -11,7 +11,7 @@ export default function Footbar() {
           <div className="md:flex md:justify-center">
             <div className="mb-6 md:mb-0">
               <span className="text-center text-2xl font-semibold text-white flex justify-center">
-                Azienda agricola Bianco
+                Router Wizards Srl
               </span>
             </div>
             <div className="w-1/3"></div>
@@ -40,10 +40,10 @@ export default function Footbar() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-10">
           <span className="flex flex-col sm:flex-row gap-5 text-sm text-gray-400 sm:text-center dark:text-gray-400">
-            Copyright © 2023 Azienda agricola Bianco
+            Copyright © 2024 Router Wizards Srl
             <p className="font-semibold text-white">P.IVA 02655120810</p>
             <p className="font-semibold text-white">
-              Via Cavour 117, Partanna (TP)
+              Viale della Repubblica 9, Prato (PO)
             </p>
           </span>
           <div className="text-white flex flex-row my-4 gap-5 justify-center items-center sm:mt-0">

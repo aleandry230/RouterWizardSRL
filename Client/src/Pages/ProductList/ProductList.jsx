@@ -14,7 +14,7 @@ export default function ProductList() {
         <div
           className="mx-auto max-w-screen-lg font-inter h-80 bg-no-repeat justify-center items-center"
           style={{
-            backgroundImage: `url(${banner})`,
+            backgroundImage: `url(https://osatech.ch/wp-content/uploads/tipi-di-server.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -22,7 +22,9 @@ export default function ProductList() {
           <div className="blurred flex flex-col justify-center items-center gap-3 h-full">
             <h1 className="text-5xl font-bold text-white">Prodotti</h1>
             <p className="text-lg text-white w-3/4 text-center">
-              Scopri l'essenza della Sicilia nei nostri oli Nocellara del Belice
+              Esplora il nostro catalogo magico di router, switch e accessori
+              per trasformare la tua connettività in un'esperienza
+              straordinaria.
             </p>
           </div>
         </div>
