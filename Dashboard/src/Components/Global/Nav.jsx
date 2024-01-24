@@ -65,13 +65,13 @@ export default function Nav() {
 
       <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
-          <p className="font-bold text-inherit">Azienda agricola Bianco</p>
+          <p className="font-bold text-inherit">RouterWizards</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand>
-          <p className="font-bold text-inherit">Azienda agricola Bianco</p>
+          <p className="font-bold text-inherit">RouterWizards</p>
         </NavbarBrand>
       </NavbarContent>
 

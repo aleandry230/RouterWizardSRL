@@ -80,8 +80,7 @@ export default function ProductList() {
     const end = start + rowsPerPage;
 
     return products.slice(start, end);
-  }, [page, rowsPerPage]);
-
+  }, [page, products]);
   const pages = Math.ceil(products.length / rowsPerPage);
 
   const renderCell = React.useCallback((product, columnKey) => {
@@ -131,18 +130,6 @@ export default function ProductList() {
         return cellValue;
     }
   }, []);
-
-  const onNextPage = React.useCallback(() => {
-    if (page < pages) {
-      setPage(page + 1);
-    }
-  }, [page, pages]);
-
-  const onPreviousPage = React.useCallback(() => {
-    if (page > 1) {
-      setPage(page - 1);
-    }
-  }, [page]);
 
   const onRowsPerPageChange = React.useCallback((e) => {
     setRowsPerPage(Number(e.target.value));
@@ -230,7 +217,7 @@ export default function ProductList() {
             </TableColumn>
           )}
         </TableHeader>
-        <TableBody emptyContent={"Nessun prodotto trovato"} items={products}>
+        <TableBody emptyContent={"Nessun prodotto trovato"} items={items}>
           {(item) => (
             <TableRow key={item.id}>
               {(columnKey) => (

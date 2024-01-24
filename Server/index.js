@@ -13,9 +13,9 @@ const createEcommerceRoutes = require("./Routes/Ecommerce");
 const mysql = require("mysql");
 const db = mysql.createPool({
   host: "localhost",
-  user: "ecommerce",
-  password: "2Is79nq_7",
-  database: "ecommercebianco",
+  user: "root",
+  password: "",
+  database: "ecommerce",
 });
 
 const app = express();
@@ -26,6 +26,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
+      "http://localhost:5174",
       "https://www.aziendaagricolabianco.com",
       "https://admin.aziendaagricolabianco.com",
     ],
@@ -56,7 +57,7 @@ const ecommerceRoutes = createEcommerceRoutes(db);
 app.use("/Ecommerce", ecommerceRoutes);
 
 // Avvia il server su HTTPS
-server.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(
     `Server Express in ascolto sulla porta ${PORT} in modalità HTTPS`
   );
