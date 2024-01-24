@@ -101,7 +101,7 @@ export default function Cart() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Azienda Agricola Bianco | Carrello</title>
+        <title>Router Wizards Srl | Carrello</title>
       </Helmet>
 
       <div className="h-auto md:h-screen w-full">

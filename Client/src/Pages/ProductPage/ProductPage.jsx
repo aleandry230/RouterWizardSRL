@@ -101,7 +101,7 @@ export default function ProductPage({ data }) {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Azienda Agricola Bianco | {String(productData.title)}</title>
+        <title>Router Wizards Srl | {String(productData.title)}</title>
       </Helmet>
       <div className="py-16 px-4 mx-auto max-w-screen-xl h-auto lg:h-screen font-inter flex flex-col gap-16">
         <div className="h-full w-full flex flex-col lg:flex-row gap-16 justify-center items-start ">

@@ -8,7 +8,7 @@ export default function About() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Azienda Agricola Bianco | Azienda</title>
+        <title>Router Wizards Srl | Azienda</title>
       </Helmet>
       <Presentation />
       <Olio />

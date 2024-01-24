@@ -8,7 +8,7 @@ export default function ProductList() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Azienda Agricola Bianco | Prodotti</title>
+        <title>Router Wizards Srl | Prodotti</title>
       </Helmet>
       <div className="h-auto bg-white">
         <div
