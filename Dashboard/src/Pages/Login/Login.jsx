@@ -84,7 +84,7 @@ export default function Login() {
       <div className="hidden md:flex relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
         <img
           alt="Landing"
-          src={bg}
+          src="https://e0.pxfuel.com/wallpapers/511/257/desktop-wallpaper-computer-networking.jpg"
           className="absolute inset-0 h-full w-full object-cover"
         />
       </div>

@@ -43,7 +43,7 @@ const CartModal = ({ totalAmount }) => {
                 <p className="text-sm text-gray-600">
                   Come beneficiario inserisci:
                 </p>
-                <p className="text-lg font-bold">Bianco Stefano</p>
+                <p className="text-lg font-bold">Router Wizards</p>
               </div>
             </div>
           </ModalBody>
